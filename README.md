@@ -4,21 +4,18 @@ Acme (as in Acme Inc., because I refuse to call it “Sinatra Template”) is an
 
 ### Installation
 
-```
-git clone git@github.com:cesarfigueroa/acme.git
-rm .git/
-find . -type f -name ".gitkeep" -exec rm {} \;
-```
+    git clone git@github.com:cesarfigueroa/acme.git
+    rm .git/
+    find . -type f -name ".gitkeep" -exec rm {} \;
 
 Fun? **No.** Done? **Yes.**
 
 ## Conventions
 
-Acme has a handful of conventions, most of which were borrowed from Rails. Some are obvious, others, not so much.
+Acme has a handful of conventions, most of which were borrowed from Rails. The less Rails-y ones are listed below.
 
 - Sinatra [conditions](https://github.com/sinatra/sinatra#conditions) are stored in `app/helpers/conditions`
 - Middleware is stored in `lib/middleware`, and enabled in `config/middleware.rb`
-- Third-party library configurations go in `config/initializers`
 
 ## To-do
 
