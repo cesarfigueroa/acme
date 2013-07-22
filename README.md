@@ -19,5 +19,5 @@ Acme has a handful of conventions, most of which were borrowed from Rails. The l
 
 ## To-do
 
-- Add SQL logging in the console, via `ActiveRecord::Base.logger = ActiveSupport::BufferedLogger.new(STDOUT)`
+- Add SQL logging in the console, using `ActiveRecord::Base.logger = ActiveSupport::BufferedLogger.new(STDOUT)`
 - Add a generator for resources (migration, model, routes, and views)
