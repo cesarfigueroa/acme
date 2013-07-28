@@ -2,7 +2,7 @@
 
 Acme (as in Acme Inc., because I refuse to call it “Sinatra Template”) is an opinionated...err...template for Sinatra. It makes a handful of assumptions about what one would use in a real world Sinatra project, such as using ActiveRecord (with BCrypt), ERB (via Erubis, a faster implementation of ERB), and PostgreSQL (in production).
 
-### Installation
+## Installation
 
     git clone git@github.com:cesarfigueroa/acme.git
     rm .git/
