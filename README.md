@@ -13,6 +13,10 @@ Alternatively, you can download a zip archive of the repo, and skip the above st
 
     find . -type f -name ".gitkeep" -exec rm {} \;
 
+And finally:
+
+    bundle install --without production
+
 Done.
 
 ## Conventions
