@@ -11,7 +11,7 @@ module Acme
       disable :show_exceptions
     end
 
-    helpers Helpers
+    # helpers Helpers
     register Middleware
 
     get '/' do
