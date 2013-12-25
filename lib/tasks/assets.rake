@@ -1,13 +1,14 @@
 namespace :assets do
   task :stylesheets do
-    options = '--update --force --style=compressed'
-    system "sass #{options} app/assets/stylesheets:public/stylesheets"
+    dirs = {:input => 'app/assets/stylesheets', :output => 'public/stylesheets'}
+    system "sass --watch #{dirs[:input]}:#{dirs[:output]}"
   end
 
   task :javascripts do
-    options = '--compile --output public/javascripts'
-    system "coffee #{options} app/assets/javascripts"
+    dirs = {:input => 'app/assets/javascripts', :output => 'public/javascripts'}
+    system "coffee -o #{dirs[:output]} -cw #{dirs[:input]}"
   end
 
-  task :compile => [:stylesheets, :javascripts]
+  task :css => :stylesheets
+  task :js => :javascripts
 end
