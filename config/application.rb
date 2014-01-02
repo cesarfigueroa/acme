@@ -13,17 +13,5 @@ module Acme
 
     # helpers Helpers
     register Middleware
-
-    get '/' do
-      send_file 'public/index.html'
-    end
-
-    error ActiveRecord::RecordNotFound do
-      send_file 'public/404.html', :status => 404
-    end
-
-    not_found do
-      send_file 'public/404.html', :status => 404
-    end
   end
 end
