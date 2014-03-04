@@ -1,13 +1,22 @@
-development:
-  adapter: sqlite3
-  database: db/development.db
-
-test:
-  adapter: sqlite3
-  database: db/test.db
-
-production:
-  adapter: postgres
-  database: db/production.db
+settings: &defaults
+  adapter: postgresql
+  encoding: unicode
   pool: 5
   timeout: 5000
+
+development:
+  <<: *defaults
+  database: acme_development
+  host: localhost
+
+test:
+  <<: *defaults
+  database: acme_test
+  host: localhost
+
+production:
+  <<: *defaults
+  database: acme_production
+  host: # <host>
+  username: # <username>
+  password: # <password>
