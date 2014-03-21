@@ -1,7 +1,6 @@
 require 'bundler'
-require 'lib/ext/sinatra'
 
-Bundler.require(:default, Sinatra.env)
+Bundler.require(:default, ENV['RACK_ENV'])
 
 # Middleware
 
