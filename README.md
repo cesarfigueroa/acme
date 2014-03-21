@@ -9,7 +9,7 @@ Acme (as in Acme Inc., because I refuse to call it “Sinatra Template”) is an
     git clone git@github.com:cesarfigueroa/acme.git
     rm .git/
 
-Alternatively, you can download a zip archive of the repo, and skip the above steps. Once you have the folder, remove all the `.gitkeep` files by running the following:
+Alternatively, you can download a [zip](https://github.com/cesarfigueroa/acme/archive/master.zip) of the repo, and skip the above steps. Once you have the folder, remove all the `.gitkeep` files by running the following:
 
     find . -type f -name ".gitkeep" -exec rm {} \;
 
