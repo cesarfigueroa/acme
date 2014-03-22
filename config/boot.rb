@@ -10,7 +10,7 @@ require 'config/routes'
 # Dependencies
 
 Dir.glob('config/initializers/*.rb').each { |i| require i }
-Dir.glob('app/helpers/**/*.rb').each { |h| require h }
+Dir.glob('app/helpers/*.rb').each { |h| require h }
 Dir.glob('app/models/*.rb').each { |m| require m }
 
 # Routes
