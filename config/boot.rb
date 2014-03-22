@@ -1,6 +1,6 @@
 require 'bundler'
 
-Bundler.require(:default, ENV['RACK_ENV'])
+Bundler.require(:default, ENV['RACK_ENV'] || 'development')
 
 # Middleware
 
