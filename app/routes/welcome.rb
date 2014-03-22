@@ -3,7 +3,7 @@ module Acme
     class Welcome < Base
       get '/' do
         @message = 'Hello World'
-        erb :'welcome/index'
+        template :index
       end
     end
   end
