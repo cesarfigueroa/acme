@@ -1,0 +1,2 @@
+- Add SQL logging in the console, using `ActiveRecord::Base.logger = ActiveSupport::BufferedLogger.new(STDOUT)`
+- Add a generator for resources (migration, model, routes, and views)
