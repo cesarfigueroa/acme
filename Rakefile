@@ -8,3 +8,9 @@ task :console do
 end
 
 task :c => :console
+
+desc 'Generate secure string (for use in session secret)'
+task :secret do
+  require 'securerandom'
+  puts SecureRandom.hex(64)
+end
