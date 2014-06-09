@@ -9,6 +9,6 @@ namespace :assets do
     system "coffee -o #{dirs[:output]} -cw #{dirs[:input]}"
   end
 
-  desc 'Compile all assets'
-  task :compile => [:stylesheets, :javascripts]
+  desc 'Compile all assets (compile css and js simultaneously)'
+  multitask :compile => [:javascripts, :stylesheets]
 end
