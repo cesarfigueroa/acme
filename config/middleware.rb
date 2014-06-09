@@ -8,6 +8,8 @@ module Acme
         :secret => ENV['SESSION_SECRET']
 
       app.use Rack::Protection::FrameOptions, :frame_options => :deny
+      app.use Rack::Deflater
+      app.use Rack::Cache
     end
   end
 end
