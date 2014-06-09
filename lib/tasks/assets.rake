@@ -9,6 +9,9 @@ namespace :assets do
     system "coffee -o #{dirs[:output]} -cw #{dirs[:input]}"
   end
 
+  desc 'Compile stylesheets'
   task :css => :stylesheets
+
+  desc 'Compile javascripts'
   task :js => :javascripts
 end
