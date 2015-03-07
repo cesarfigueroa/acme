@@ -2,6 +2,13 @@ $LOAD_PATH << Dir.pwd
 
 Dir.glob('lib/tasks/*.rake').each { |t| import t }
 
+desc 'Start the server'
+task :server do
+  system 'bundle exec rackup'
+end
+
+task :s => :server
+
 desc 'Start the console'
 task :console do
   system "irb -r config/boot -I #{Dir.pwd}"
