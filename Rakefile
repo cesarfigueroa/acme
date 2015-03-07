@@ -9,7 +9,7 @@ end
 
 task :s => :server
 
-desc 'Start the console'
+desc 'Open the console'
 task :console do
   system "irb -r config/boot -I #{Dir.pwd}"
 end
