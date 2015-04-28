@@ -5,6 +5,7 @@ gem 'bcrypt'
 gem 'erubis'
 gem 'i18n'
 gem 'pg'
+gem 'puma'
 gem 'sequel'
 gem 'sinatra', :require => 'sinatra/base'
 
