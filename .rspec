@@ -1,0 +1,2 @@
+-I .
+--require spec_helper
