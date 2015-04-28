@@ -1,6 +1,6 @@
 # Acme
 
-Acme (as in Acme Inc., because I refuse to call it “Sinatra Template”) is an opinionated template for Sinatra. It makes a handful of assumptions about what one would use in a real world Sinatra project, such as using ActiveRecord (with BCrypt), ERB (via Erubis, a faster implementation of ERB), and PostgreSQL.
+Acme (as in Acme Inc., because I refuse to call it “Sinatra Template”) is an opinionated template for Sinatra. It makes a handful of assumptions about what one would use in a real world Sinatra project, such as using Sequel (with PostgreSQL) and ERB (via Erubis, a faster implementation of ERB).
 
 ### Installation
 
