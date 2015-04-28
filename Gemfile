@@ -3,6 +3,7 @@ ruby '2.2.1'
 
 gem 'bcrypt'
 gem 'erubis'
+gem 'i18n'
 gem 'pg'
 gem 'rack-cache'
 gem 'sequel'
