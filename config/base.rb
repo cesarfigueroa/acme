@@ -9,7 +9,7 @@ module Acme
     disable :dump_errors
 
     configure :test do
-      disable :show_exceptions
+      set :show_exceptions, :after_handler
     end
 
     helpers Helpers
