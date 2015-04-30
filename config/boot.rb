@@ -2,20 +2,15 @@ require 'bundler'
 
 Bundler.require(:default, ENV['RACK_ENV'] || 'development')
 
-# Middleware
+Dir.glob('config/**/*.rb').each { |file| require file }
 
-require 'config/middleware'
-require 'config/routes'
+Dir.glob('app/**/*.rb').each do |file|
+  unless Dir.entries('app/routes').include?(File.basename(file))
+    require file
+  end
+end
 
-# Dependencies
+require 'app/routes/base'
+Dir.glob('app/routes/*.rb').each { |file| require file }
 
-Dir.glob('config/initializers/*.rb').each { |i| require i }
-Dir.glob('app/helpers/*.rb').each { |h| require h }
-Dir.glob('app/models/*.rb').each { |m| require m }
-
-# Routes
-
-require 'config/base'
-Dir.glob('app/routes/*.rb').each { |r| require r }
-
-require 'config/application' # Application
+require 'application'
