@@ -9,7 +9,6 @@ module Acme
 
       app.use Rack::Protection::FrameOptions, :frame_options => :deny
       app.use Rack::Deflater
-      app.use Rack::Cache
     end
   end
 end
