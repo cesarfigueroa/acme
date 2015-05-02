@@ -21,7 +21,8 @@ Done.
 
 ## Conventions
 
-Acme has a handful of conventions, most of which were borrowed from Rails. The less Rails-like ones are listed below.
+Acme has a handful of conventions, many of which were borrowed from Rails. The less Rails-like ones are listed below.
 
 - Sinatra [conditions](https://github.com/sinatra/sinatra#conditions) are stored in `app/helpers/conditions`
-- Middleware is stored in `lib/middleware`, and enabled in `config/middleware.rb`
+- Routes are added in `config/routes.rb`
+- Middleware is configured in `config/middleware.rb`
