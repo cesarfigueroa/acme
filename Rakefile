@@ -4,7 +4,7 @@ Dir.glob('lib/tasks/*.rake').each { |t| import t }
 
 desc 'Start the server'
 task :server do
-  system 'bundle exec rackup'
+  system 'bundle exec puma --config config/puma.rb'
 end
 
 task :s => :server
