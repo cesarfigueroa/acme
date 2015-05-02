@@ -7,3 +7,7 @@ preload_app!
 
 port ENV['SERVER_PORT']
 environment ENV['RACK_ENV']
+
+on_worker_boot do
+  Sequel.connect(ENV['DATABASE_URL'])
+end
