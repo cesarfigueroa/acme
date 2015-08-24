@@ -1,3 +1,5 @@
+ENV.store('RACK_ENV', 'test')
+
 require 'config/boot'
 
 RSpec.configure do |config|
